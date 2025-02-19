@@ -20,7 +20,12 @@ import {
 } from "@shopify/restyle";
 import { Theme } from "../../theme/theme";
 
-export const Box = createBox<Theme>();
+/**
+ * Componente Box base usando Restyle
+ * Útil para criar layouts e containers
+ */
+const Box = createBox<Theme>();
+
 export type BoxProps = React.ComponentProps<typeof Box>;
 
 export type TouchableOpacityBoxProps = RNTouchableOpacityProps &
@@ -38,3 +43,5 @@ export const TouchableOpacityBox = createRestyleComponent<
   [backgroundColor, spacing, spacingShorthand, layout, border],
   TouchableOpacity
 );
+
+export default Box;
