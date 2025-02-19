@@ -55,25 +55,37 @@ const theme = createTheme({
     cardBorder: palette.gray200,
     divider: palette.gray200,
   },
-
   spacing: {
-    xs: 4,
-    s: 8,
-    m: 16,
-    l: 24,
-    xl: 32,
-    xxl: 40,
+    s2: 2,
+    s4: 4,
+    s6: 6,
+    s8: 8,
+    s12: 12,
+    s15: 15,
+    s16: 16,
+    s20: 20,
+    s24: 24,
+    s26: 26,
+    s32: 32,
+    s40: 40,
+    s48: 48,
+    s50: 50,
+    s56: 56,
   },
-
   borderRadii: {
-    none: 0,
-    s: 4,
-    m: 8,
-    l: 16,
-    xl: 24,
-    round: 9999,
+    s2: 2,
+    s4: 4,
+    s6: 6,
+    s8: 8,
+    s12: 12,
+    s16: 16,
+    s20: 20,
+    s24: 24,
+    s32: 32,
+    s40: 40,
+    s48: 48,
+    s56: 56,
   },
-
   textVariants: {
     defaults: {
       color: "mainText",
@@ -155,4 +167,7 @@ const theme = createTheme({
 });
 
 export type Theme = typeof theme;
+export type ThemeColors = keyof Theme["colors"];
+export type gap = keyof Theme["spacing"];
+
 export default theme;
